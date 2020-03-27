@@ -21,7 +21,7 @@ if (salario-inss >= 4664.68){
 }else ir = 0;
 
 liquido = salario - ir - inss;
-console.log("Salario bruto:  ", salario);
-console.log("INSS:           (", inss, ")");
-console.log("IR:             (", ir, ")");
-console.log("Salario liquido: ", liquido);
+console.log(" Salario bruto: ", salario);
+console.log("          INSS: (",inss, ")");
+console.log("           IR:  (", ir, ")");
+console.log("Salario liquido:", liquido);
