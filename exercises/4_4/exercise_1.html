@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 4.4</title>
+
+    <style>
+        div {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Exercício 4.4 - JavaEscripito </h1>
+    <div class="main-content">
+        <div class="center-content">
+            <p>Texto padrão do nosso site</p>
+            <p>-----</p>
+            <p>Trybe</p>
+        </div>
+    </div>
+    <script>
+        /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()*/
+        /*Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos.
+           (Não gaste tempo pensando no texto e sim realizando o exercício)*/
+        function mudaP(text) {
+            document.getElementsByTagName('p')[1].innerHTML = text;
+        }
+        mudaP("2 anos mais velho");
+        /*Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe.*/
+        function mudaCor(elemento, cor) {
+            document.getElementsByClassName(elemento)[0].style.backgroundColor = cor;
+        }
+        mudaCor('main-content', "#0FA36B");
+
+        /*Crie uma função que mude a cor do quadrado vermelho para branco.*/
+        function mudaCor(elemento, cor) {
+            document.getElementsByClassName(elemento)[0].style.backgroundColor = cor;
+        }
+        mudaCor('center-content', "#FFFFFF");
+        /*Crie uma função que corrija o texto da tag <h1>.*/
+        function mudaTexto(elemento, text) {
+            document.getElementsByTagName(elemento)[0].innerHTML = text;
+        }
+        mudaTexto('h1', "Exercício 4.4 - JavaScripit");
+        /*Crie uma função que modifique todo o texto da tag <p> para maiúsculo.*/
+        function caixaAlta(elemento) {
+            let texto = document.getElementsByTagName(elemento);
+            for (let i = 0; i < texto.length; i+=1) {
+                texto[i].innerHTML = texto[i].innerHTML.toUpperCase();
+            }
+        }
+        caixaAlta('p');
+        /*Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+               */
+        function mostra(elemento) {
+            let texto = document.getElementsByTagName(elemento);
+            for (let i = 0; i < texto.length; i+=1) {
+                console.log(texto[i].innerHTML);
+            }
+        }
+        mostra('p');
+    </script>
+</body>
+
+</html>
