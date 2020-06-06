@@ -9,7 +9,7 @@ const task = (value) => {
 }
 function App() {
   const compromissos = [
-    '13h - pantão',
+    '13h - plantão',
     '14h - avisos e alinhamentos',
     '16:30 - aula com cacique',
     '19:30 - forms',
