@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(112, 170, 170);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.pokemon {
+  align-items: center;
+  background-color: whitesmoke;
+  border: black solid 2px;
+  border-radius: 10px;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px auto;
+  min-width: 100px;
+  opacity: 0.9;
+  max-width: 300px;
+}
+.pokemon img {
+  width: 200px;
+}
+.pokedex {
+  align-items: center;
+  /* border: solid tomato 2px; */
+  display: flex;
+  flex-direction: column;
+ }
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+  height: 370px;
+}
+
+.pokedex-buttons-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.pokedex-button {
+  background-color: whitesmoke;
+  border: solid black 1px;
+  border-radius: 8px;
+  color: black;
+  font-weight: 700;
+  height: 37px;
+  margin: 5px;
+  width: 100px;
+}
+
+.filter-button {
+  background-color: whitesmoke;
+  border: solid black 1px;
+  border-radius: 8px;
+  color: black;
+  font-weight: 500;
+  height: 35px;
+  margin: 10px 0 0 10px;
+  width: 150px;
+}

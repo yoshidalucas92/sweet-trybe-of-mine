@@ -1,5 +1,5 @@
 {
-  "name": "nome-app",
+  "name": "my-pokedex-stateful",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
